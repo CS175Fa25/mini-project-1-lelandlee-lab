@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_principle"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/principleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/principle_hint"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_rate"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/interestSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="200"
+            android:progress="100"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/interestTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_interest_rate"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_loan_term"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/loanTermRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/fifteenYearsRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fifteen_years"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/twentyYearsRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twenty_years"
+                android:layout_marginEnd="8dp"/>
+
+            <RadioButton
+                android:id="@+id/thirtyYearsRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirty_years"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/taxesCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/include_taxes"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/press_calculate"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/uninstallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uninstall"/>
+
+    </LinearLayout>
+</ScrollView>

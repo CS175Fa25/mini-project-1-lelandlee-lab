@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mortgage Calculator by Leland Lee</string>
+    <string name="enter_principle">Enter Principle ($):</string>
+    <string name="principle_hint">Enter amount</string>
+    <string name="interest_rate">Interest rate:</string>
+    <string name="default_interest_rate">10.0%</string>
+    <string name="select_loan_term">Select Loan Term</string>
+    <string name="fifteen_years">15 years</string>
+    <string name="twenty_years">20 years</string>
+    <string name="thirty_years">30 years</string>
+    <string name="include_taxes">Include taxes and insurance (0.1%)</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="press_calculate">Press CALCULATE for monthly payments.</string>
+    <string name="empty_input_error">Please enter the principle.</string>
+    <string name="decimal_error">Please enter a valid number with 2 decimal digits max.</string>
+    <string name="monthly_payment">Monthly payment: $%.2f</string>
+</resources>
